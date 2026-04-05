@@ -1,0 +1,109 @@
+<!-- Input tags mein ye attributes sabse zaroori hain:
+
+id: Ye label ko input se jodne ke liye hota hai (label for="id_name"). Isse user label par click karega toh bhi box select ho jayega.
+
+name: Ye sabse important hai backend (PHP/NodeJS) ke liye. Jab form submit hoga, toh server par data isi name se jayega (e.g., gender=male).
+
+value: Ye wo data hai jo database mein save hoga. Agar aapne value="male" nahi likha, toh server ko sirf "on" milega, ye nahi pata chalega ki kya select hua.
+
+checked: Agar aap chahte hain ki koi option pehle se hi select ho kar aaye, toh ye attribute lagaiye.
+
+Example: <input type="radio" name="gender" value="male" checked> -->
+
+
+<!-- 
+. name Attribute ka Asli Kaam
+Jab aap form submit karte hain, toh browser ek data ka "Packet" banata hai. Us packet mein data hamesha name=value ki jodi (pair) mein jata hai.
+
+Radio Button Example:
+
+Agar aapne likha: <input type="radio" name="gender" value="male">
+
+Server ko milega: gender = male
+
+Fayda: Database mein gender naam ka column hoga, jahan 'male' store ho jayega.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <h1>form create for website </h1>
+    <form action="post">
+
+        <label for="username"></label>
+        <h2>enter your name </h2>
+
+        <input type="text" id="username" name="username" placeholder="ENTER YOUR NAME">
+
+        <div>
+            <h2>enter your mother name</h2>
+            <input type="text" id="mname" name="mname" placeholder="mother name">
+        </div>
+        <div>
+            <h2>enter your father name</h2>
+            <input type="text" id="fname" name="fname" placeholder="father name">
+        </div>
+        <div>
+            <h2>Gender</h2>
+            <label for="male"> <input type="radio" id="male" name="gender" value="male">male</label>
+            <label for="female"> <input type="radio" id="female" name="gender" value="female">female</label>
+        </div>
+        <div>
+            <h2>enter your subjects</h2>
+            <input type="checkbox" name="subp[]" id="hindi" value="hindi">
+            <label for="hindi">hindi</label>
+
+            <input type="checkbox" name="sub[]" id="eng" value="english">
+            <label for="eng">english</label>
+
+            <input type="checkbox" id="science" name="sub[]" value="science">
+            <label for="science">science</label>
+        </div>
+        <br>
+
+
+        <div>
+            <label for="feedback">feedback </label>
+        <br>
+            <textarea id="feedback " name="feedback"></textarea>
+        </div>
+<button>submit</button>
+    </form>
+
+    <script src="form.js"></script>
+</body>
+
+</html>
+<!-- 
+1. Tags vs Attributes (Farq kya hai?)
+Tag (The Skeleton): Tag batata hai ki cheez kya hai. Jaise <a> tag batata hai ki ye ek link hai, ya <img> batata hai ki ye ek image hai. Lekin sirf tag se kaam nahi chalta.
+
+Attribute (The Detail): Attribute batata hai ki us tag ko kaise behave karna hai ya uski extra information kya hai.
+
+Logic: Bina <a> tag ke href ka koi wajood nahi hai, aur bina href ke <a> tag bekar hai (link kahan jayega?).
+
+Example: <a href="google.com">. Yahan <a> ghar hai aur href us ghar ka address. Ghar ke bina address ka kya kaam?
+
+2. CSS <head> ke khatam hone se pehle kyo?
+HTML file jab load hoti hai, toh browser use upar se niche (Top to Bottom) padhta hai.
+
+Reason: Agar aap CSS ko sabse upar (Head mein) rakhte hain, toh browser ko pehle hi pata chal jata hai ki website ka rang-roop (Design) kaisa dikhna chahiye.
+
+Kya hoga agar niche rakhein? Agar CSS niche hogi, toh browser pehle bina design wala "Nanga" HTML dikhayega (jise FOUC - Flash of Unstyled Content kehte hain), aur fir achanak se design load hoga. Ye user experience ke liye bahut ganda lagta hai.
+
+3. Script <body> ke khatam hone se pehle kyo?
+JavaScript aksar heavy hoti hai aur ye HTML ke elements par kaam karti hai (jaise buttons click karna, form submit karna).
+
+Reason 1 (Loading Speed): Browser jab <script> par pahunchta hai, toh wo baaki ka HTML load karna rok deta hai aur pehle script download/run karta hai. Agar script upar hogi, toh user ko khali screen dikhegi jab tak script load na ho jaye.
+
+Reason 2 (HTML Elements ka hona): JS aksar kisi ID ya Class ko pakadti hai (e.g., document.getElementById('btn')). Agar script upar hogi aur button niche, toh JS kahegi: "Bhai, mujhe button toh mila hi nahi!" kyunki browser abhi tak button tak pahuncha hi nahi tha.
+
+Solution: Isliye </body> se bilkul pehle script rakhte hain taaki pura HTML (DOM) load ho jaye, aur fir JS apna kaam shuru kare. -->
