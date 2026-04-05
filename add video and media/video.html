@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add video and media</title>
+    <link rel="stylesheet" href="video.css" >
+</head>
+<body>
+    <video src=
+   "video1.mp4" controls loop  
+    width ="800">youtube</video >
+<br>
+
+    <span>
+    <audio src="audio.mp3" controls loop   preload ="metadata"></audio>
+    </span>
+
+    <!-- loop mute poster -->
+    
+<!-- audio atribute 
+autoplay
+loop
+mute
+preload meta data load kr le meta se  
+1. preload="none"
+Iska matlab hai ki browser file ko tab tak touch bhi nahi karega jab tak user "Play" button par click na karde.
+
+Fayda: User ka internet data bachta hai aur page bahut jaldi load hota hai.
+
+Kab use karein: Jab page par bahut saare videos hon aur aap nahi chahte ki saare ek saath load hone lagein.
+
+2. preload="metadata" (Default)
+Browser puri file toh download nahi karta, lekin file ki jaankari (metadata) nikal leta hai—jaise ki video kitne minute ka hai, uska size kya hai, ya pehla frame kaisa dikhta hai.
+
+Fayda: User ko video ki length dikh jaati hai bina pura video download kiye.
+
+Kab use karein: Ye sabse balance option hai.
+
+3. preload="auto"
+Browser ko lagta hai ki user is video ko zaroor dekhega, isliye wo page load hote hi background mein file download karna shuru kar deta hai.
+
+Fayda: Jaise hi user play karega, video bina buffering ke turant chal jayega.
+
+Nuksan: Agar user ne video nahi dekha, toh uska data faltu mein waste ho jayega.
+-->
+
+</body>
+</html>
