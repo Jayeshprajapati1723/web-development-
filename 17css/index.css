@@ -1,0 +1,56 @@
+p{
+    /* font family */
+    /* font-size */
+
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+code{
+    font-family:cursive;
+    color: blue;
+}
+
+span {
+    font-family:monospace;
+}
+/* font =size */
+span {
+    font-size : 100px;
+    /* line-height */
+    line-height: 100px;
+     /*text-transformer  */
+text-transform: uppercase;
+/* text-decoration  text upercase lowercase banana*/
+text-decoration:underline;
+/* text-decoration color line ka color kesa hoga */
+text-decoration-color: blue;;
+/* text-decoration line 
+line upr niche ya nhi chahiye */
+text-decoration-line: overline;
+/* text deco thickness 
+line thickness design krna */
+text-decoration-thickness: 20px;
+/* text indent */
+text-indent:4500px ;
+}
+h1{
+/* jo bhi line ko age khiskana ho  */
+    text-indent: 20px;
+    text-overflow: ellipsis;
+    /* 1. 3 Zaroori Sharatein (Conditions)
+text-overflow akela kaam nahi karta. Iske liye aapko ye 3 properties ek saath lagani padti hain:
+
+white-space: nowrap; (Taaki text dusri line mein na jaye).
+
+overflow: hidden; (Taaki bahar nikalne wala text chhup jaye).
+
+text-overflow: ellipsis; (Taaki aakhir mein dots aa jayein). */
+}
+
+/* color
+rgb / hex color code /rgb a / etc
+and palates website we can choose best colors 
+
+
+*/
