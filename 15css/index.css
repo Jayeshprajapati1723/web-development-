@@ -1,0 +1,30 @@
+/* suedo selectors for links 
+L - :link (Normal link)
+
+V - :visited (Clicked link)
+
+H - :hover (Mouse upar le jane par)
+
+A - :active (Click karte waqt)
+*/
+a:link{
+    color:red ;
+}
+
+/* tbhi kam krta h jb link shi ho  */
+a:visited{
+color:rgb(0, 255, 76) ;
+}
+
+a:hover{
+    color : rgb(111, 0, 255) ;
+}
+
+a:active{
+    color: gold ;
+}
+
+/* first child not imp but remember it is applicabel on onl first child of tag  */
+
+
+
