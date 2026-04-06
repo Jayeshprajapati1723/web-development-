@@ -1,0 +1,86 @@
+
+/* box padding border 
+css box model */
+ 
+/* box model */
+/* alll tags are box div/span html tags
+border
+margin
+padding
+content
+padding 
+margin
+border
+*/
+.box {
+    background-color: rgb(78, 109, 109);
+}
+.box1 {
+    color:red;
+    margin : 2px ;
+    border : 4px solid blue;
+        padding: 10px;
+        height :200px ;
+        box-sizing: border-box; 
+        /* box sizing border box se mtlb h ki hmne content + padding + border = height btaya h 
+        margin bahar this is not add
+        */
+
+}
+.box2 {
+    color: gold ;
+}
+
+/* margin collapse 
+do box h unki margin set krenge to overlap hogi margin first k botto second k top pr jiski max value hogi hmesha this is know as margin collapse
+*/
+
+/* 
+Har HTML element ek box hota hai. In properties ke bina aap element ka size aur gap set nahi kar sakte.
+
+width & height: Element ka size tay karne ke liye.
+
+padding: Border ke andar ka gap.
+
+margin: Border ke bahar ka gap.
+
+border: Element ke charon taraf ki line.
+
+2. Layout (Positioning)
+Website ka dhancha (structure) banane ke liye ye sabse zaroori hain:
+
+display: Sabse important! (e.g., display: flex; ya display: grid;). Iske bina elements ko ek line mein laana namumkin hai.
+
+flex-direction, justify-content, align-items: Flexbox ke andar items ko set karne ke liye.
+
+position: Element ko fix karne ke liye (e.g., fixed, absolute, relative).
+
+3. Typography (Text Styling)
+Text ko sundar banane ke liye:
+
+font-family: Font badalne ke liye.
+
+font-size: Chhota-bada karne ke liye.
+
+color: Text ka rang.
+
+text-align: Left, right ya center karne ke liye.
+
+line-height: Do lines ke beech ka gap.
+
+4. Visuals (Look & Feel)
+Aapki website ki "shakal" inhi se banti hai:
+
+background-color ya background-image: Peeche ka color ya photo.
+
+border-radius: Corners ko round karne ke liye (jaise buttons mein hota hai).
+
+box-shadow: Elements ko thoda "uhaara" hua (3D) dikhane ke liye.
+
+opacity: Transparent banane ke liye.
+
+5. Responsiveness (Mobile Friendly)
+Kyuki log mobile par website dekhte hain, isliye ye property "Must-Have" hai:
+
+@media queries: Iske bina aap mobile-friendly website nahi bana sakte. Ye batata hai ki screen chhoti hone par design kaise badlega.
+*/
