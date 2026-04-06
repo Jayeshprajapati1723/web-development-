@@ -1,0 +1,10 @@
+/* first child or first of type properties ka use  */
+
+div p:first-child{
+    margin:5px ; 
+    color :red ;
+    background-color: yellow;
+}
+ p{
+    background-color: blue; color :white;
+ }
