@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS Specificity & Cascade</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- todays topic is :
+     
+CSS Specificity & Cascade -->
+
+    <h1 class="yellow red purple">i am h1 tag i have three classes yellow red purple </h1>
+
+    <!-- yha hm css apply krenge char chizo m or dekhenge ki colro konsa ata h 
+ h1
+ .red
+ .yellow
+ .purple
+ 
+ result purple class k ayega 
+ h1{
+    color: blue;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.red{
+    color:red;
+}
+
+.purple{
+    color:purple;
+}
+ kisi k bhi ata h reason or uska base kya h 
+ main algorithm is casecode 
+ jo sbse last m  hoga vo overide kr dega baki ko same selectors ki multiple class 
+ muliple selector but unique like class than winner is last 
+
+ iske diffent hm krenge jese h1 to specificity calculate krte h 
+ inline -> id-> class/atribute selectors
+ ->element selector -> unique 
+ -->
+
+    <!-- origin  browser ki apni user agent style sheet -->
+
+
+    <!-- style inline ko important lga k overide kiya ja skta h 
+  -->
+    <h2 style="color: lch(88.98% 113.34 131.65);">h i i am inline style but overide with important se </h2>
+
+
+    <!-- specificity calcualte 
+    tag 1
+    class 10
+    h1.class name {
+    
+    } > than normal .class name {
+     
+    } 
+    
+    -->
+</body>
+
+</html>

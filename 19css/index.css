@@ -1,0 +1,20 @@
+h1{
+    color: blue;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.red{
+    color:red;
+}
+
+.purple{
+    color:purple;
+}
+
+/* style tag overide ho skta h  */
+h2{
+    color:blue  !important ;
+}
