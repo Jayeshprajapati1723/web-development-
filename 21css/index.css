@@ -1,0 +1,49 @@
+/* display inline se box inline bn jata h 
+
+display : none se pura box gayab space bhi gayab 
+
+display inline bloxk se block se inline bnta h or box vali properties bhi ache se apply hoti h 
+
+visiblity hidden krne se box gayab ho jata h prntu space gayab nhi hota h 
+*/
+
+
+
+
+
+.box {
+/* YE FULL BLOCK H ISNE BHI INLINE KR SKTE H  */
+display:    inline;
+/* AB ISE krne se bad vala span bhi sath m a jayega ek inline trh */
+/* padding: 45px ;
+margin : 5px ; */
+/* to ye bhi achhe se nhi kr paye apply 
+to hme iske liye 
+
+display : inline block krnahoga
+
+*/
+
+display: inline block ;
+margin : 10px ;
+border:10px ;
+    border: 2px solid gray;
+    display:none ; 
+visibility : hidden ;
+}
+
+span{
+    display: inline block ;
+margin : 10px ;
+border:10px ;
+    border: 2px solid rgb(128, 128, 128);
+    /* display :none ;   pura ht gya box content dono  isme box bhi or space dono ht jate h*/
+
+/* visiblity hidden isliye use krte h jisme space nhi htti bs box htta h  */
+    /* visibility: hidden ; */
+}
+
+/* display flex or inline 
+
+display grid or inline 
+*/
