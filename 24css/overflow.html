@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css overflow property  </title>
+    <style>
+        .box{
+            border : 2px solid blue ; 
+        width : 200px ;
+        height : 180px ;
+        /* ab text bahar nikl jayega box se  */
+
+
+        /* overflow se bcha skte h ye hone se  */
+        /* overflow : scroll ; */
+        /* scroll a jayenge box m smsya khtm */
+
+        overflow :auto ;
+        /* auto adjust scroll bhi kra dega or pura fit hoga to jarurat hi nhi  scroll tbhi dikhega jab overflow hoga vese nhi */
+
+        margin: 20px ;
+
+        /*white-space:nowrap;
+ isse vertically jagah lega hroizantal m no text  */
+/* white-space:nowrap; */
+
+/* content bhot bda h to hme ..... lana  to elipsis use kr ste h  ye alg h overflow se */
+text-overflow: ellipsis;
+
+
+/* overlfow x y m bhi kr skte  */
+overflow-y: auto;
+overflow-x :hidden;
+}
+
+    </style>
+</head>
+<body>
+    <!-- css overflow property  -->
+<div class="box">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ab libero dicta nobis delectus, adipisci eligendi cupiditate debitis odio, reprehenderit doloribus deserunt laboriosam non quos sed tempore nam dignissimos ex. Modi iure corrupti, delectus ducimus reprehenderit maxime, assumenda error, harum enim nostrum iste accusamus fugit et in culpa. Libero eos quam dolore iure sapiente mollitia debitis ab aut nesciunt! At quidem quo, quis iusto magnam quam magni deleniti possimus. Debitis illo ad laboriosam voluptas tempore, ut saepe neque nihil inventore pariatur voluptatem enim animi sit nam iste architecto necessitatibus incidunt voluptatum sed, dolorem atque, culpa at commodi molestias? Nemo, delectus?</p>
+</div>
+<div class="box ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos eius quam? Optio dicta reprehenderit sapiente exercitationem nostrum, velit cupiditate vitae impedit ad officia consequatur magnam officiis maiores voluptates corrupti.
+</div>
+</body>
+</html>
