@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position concept and properties</title>
+<style>
+.box1{
+background-color: aqua;
+}
+.box2{
+    background-color: azure;
+    /* relative krne se box k moverment hone lgta h  */
+    /* position: relative ;
+left: 20px ;    top : 50px ; */
+/* position : fixed ;
+top : 2px  ; */
+/* sticky chipk jata h  */
+position : sticky ;
+top :0 px ; 
+
+
+}.box3{
+    background-color: blue;
+    position: absolute;
+    top: 50px ;
+
+}.box4{
+    background-color: crimson;
+    position: absolute;
+    top: 0px;
+}
+/* absolute position m agr parent ki position bhi absolute mil jati h jese yha parent class h usme charo box to fir vo  html ko nhi parent class respect m move krega  */
+*{
+    margin :0;
+    padding :0; 
+}
+
+.box{
+    border : 2px solid black ;
+    width : 133px ;
+    height : 133px ;
+margin : 3px ;
+padding : 3px ;
+}
+/* static jo phle set h  
+
+relative postion set krte hi hm top left write bottom set kr skte h jisse box upr niche ja skta h 
+
+absolute m box apne parent ansestors k respect position leta h phle parent fir body fir head fir html 
+final html k respect m agr khi postion nhi mili vesi to fir 
+*/
+.box5{
+    position : fixed ;
+    background-color: gold ;
+    margin : 2px ; 
+    border :2px solid black ;
+}
+
+.parent{
+    border: 20px solid purple;
+    margin : 15px ;
+    padding : 10px ;
+}
+</style>
+
+</head>
+<body>
+<div class="parent">
+    <div class="box box1" ></div>
+    <div class="box box2"></div>
+<div class="box box3"></div>
+<div class="box box4"></div>
+<div class="box box5"></div>
+</div>
+
+
+<!-- acesseptional  gindex : 10-->
+<!-- translate invert or persepective teeno hi properties bhi apne parent pr hi respective manti h chahe parent absolute h0o ya nhi  -->
+
+</body>
+</html>
+
+<!-- Gemini said
+Aapka code ekdum badhiya hai! Aapne comments mein Static, Relative, aur Absolute ko kaafi had tak sahi samjha hai. CSS Position properties website ke elements ko "place" karne ke liye sabse powerful tool hain.
+
+Chaliye, aapke code ke basis par in properties ko thoda aur deeply aur mst examples ke saath clear karte hain:
+
+1. Static (Default)
+Ye har element ki normal halat hoti hai.
+
+Isme top, bottom, left, right kaam nahi karte.
+
+Box wahi rehta hai jahan HTML mein likha gaya hai.
+
+
+
+. Relative (Apni jagah se hilao 🏃‍♂️)
+Jab aap position: relative; dete hain, toh box apni asli (original) jagah ke respect mein hilta hai.
+
+Khaas Baat: Box jahan se hilta hai, wahan ki khaali jagah (gap) bachi rehti hai. Dusre boxes ko lagta hai ki box abhi bhi wahi hai.
+
+
+
+Absolute (Azaad Panchi 🦅)
+Ye box normal flow se bahar nikal jata hai.
+
+Rule: Ye apne us Parent ke respect mein position leta hai jisme position: relative (ya koi bhi non-static position) laga ho. Agar kisi parent mein nahi laga, toh ye sidha <html> ke pas chala jayega.
+
+Farq: Ye piche koi jagah nahi chhodta. Niche wale boxes iski purani jagah par aa jate hain.
+-->
