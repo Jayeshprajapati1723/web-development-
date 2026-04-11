@@ -1,0 +1,31 @@
+:root{
+    --pmclr : #cb7676 ;
+    --txtclr : rgb(198, 204, 20) ;
+    --bgclr : hwb(240 76% 24%);
+
+}
+
+h2{
+    text-decoration:  underline rgb(205, 213, 182);
+color : var(--txtclr) ;
+}
+
+body {
+    background-color: hwb(60 2% 97%) ;
+/* color : var(--txtclr)     */
+}
+
+nav{
+    background-color: var(--bgclr);
+    border : 0cap solid rgb(3, 3, 238) ;
+    width : 120px ;
+    height : 160px; 
+    padding : 2px ;
+    margin : 10px ;
+    background-color: var(--bgclr); 
+    
+}
+li{
+    list-style-type:square ;
+    text-decoration: underline purple;
+}
