@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables in css</title>
+<style>
+/* sbse phle root bnao  */
+:root {
+    /* isme global variable bnao */
+    --pmcolor : red ;
+    --bgclr: blue ;
+    --textclr: gold ;
+    /* var(--variable and use anywhere )  or bhi create kr skte h padding etc */
+}
+ul{
+    display : flex ;
+
+}
+
+li {
+    list-style-type: none;
+    /* agr vapis declare kr diya to overide ho jayega  */
+      --textclr: rgb(0, 255, 26) ;
+    color : var(--textclr) ;
+        margin : 20px ;
+}
+
+nav{
+    background-color: var(--bgclr);
+}
+div{
+    background-color: var(--pmcolor);
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+        <ul>
+        <li>home</li>
+        <li>menu</li>
+        <li>about</li>
+    </ul>
+</nav>
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima animi repellat quisquam autem nemo, eius neque aliquid ipsam natus quis odit non quaerat est magni ab iure blanditiis tempore culpa libero dolor optio deserunt odio nobis. Dolor accusamus autem repellendus ad necessitatibus sunt ex, molestiae in reprehenderit iure corrupti totam delectus tenetur, omnis similique repudiandae quod molestias inventore veniam. Consectetur sunt repudiandae voluptatibus asperiores recusandae. Qui incidunt officiis sit officia deleniti, illo placeat libero facilis iste veritatis quo velit, voluptatum necessitatibus beatae impedit eveniet ut, cumque earum corporis!
+    </div>
+</body>
+</html>
