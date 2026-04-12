@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid another way</title>
+    <style>
+        .container{
+            border :  
+            2px solid red  ;
+            height: 180px ;
+            width: 180px ;
+            display : grid ;
+            grid-template-areas: "nav nav nav"
+            "sidebar sidebar article "
+            "foot foot foot"
+            ;
+            /*fraction  fr concept 
+            grid-template-colom : 1fr 1fr 1fr */
+
+            /* gap properties  */
+            gap : 10px ;
+            row-gap: 10px ;
+            column-gap: 10px ;
+            justify-items: center ;
+            align-items:self-end ;
+        
+        } 
+        .item{
+            margin : 2px ;
+            border  : 2px solid rgb(255, 123, 0) ;
+            /* height : 20px ;
+            width : 20px ; */
+        }
+        .i1{
+            grid-area: nav;
+        background-color: aqua;
+        }
+        .i2{
+            grid-area: sidebar;
+        background-color: blue ;
+        }
+        .i3 {
+            grid-area: article;
+            background-color: yellow;
+        }
+        .i4{
+            grid-area: foot ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+<div class="item i1" >1</div>
+<div class="item i2"  >2</div>
+<div class="item i3" >3</div>
+<div class="item i4" >4</div>
+<div class="item i5" >5</div>
+<div class="item i6" >6</div>
+
+
+
+    </div>
+</body>
+</html>

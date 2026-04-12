@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid concepts</title>
+    <style>
+        .boxes{
+            border: 2px solid black ;
+            display : grid ;
+            /* kitne coloms chahiye  */
+            grid-template-columns: 100px 100px 100px ;
+
+            grid-template-rows: 100px 100px ;
+            /* ab bar bar colom row ki height kitne set krenge isse bchne k liye hm repeat() function ko call krte h  */
+            /* grid-template-rows: repeat(5, 100px); */
+        }
+        .b{
+            border :2px solid blue ;
+            width : 25px ;
+            height  : 25px ; 
+ 
+}
+.box1{
+                /* Grid Lines aur Placement (Harry ka Special Concept)
+Grid mein har line ka ek number hota hai (1, 2, 3...). Aap kisi item ko bol sakte ho ki wo "Line 1 se Line 3" tak phail jaye.
+
+grid-column: 1 / 3;: Matlab box pehli column line se lekar teesri column line tak jayega (yaani do columns ki jagah lega) [11:03].
+
+grid-row: 2 / 4;: Matlab box doosri row line se chauthi row line tak phail jayega. */
+grid-column: 1/2;     
+grid-row: 1/2;  
+}
+.box5{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    /* box 5 ab box 1 pr a jayega  */
+}
+    </style>
+</head>
+<body>
+    <div class="boxes" >
+        <div class="b box1">1</div>
+                <div class=" b box2">2</div>
+        <div class="b box3">3</div>
+        <div class="b box4">4</div>
+        <div class="b box5">5</div>
+
+        
+    </div>
+
+</body>
+
+</html>
+<!-- . grid-template-columns (Columns kyun milte hain?)
+Jab aap likhte hain grid-template-columns: 100px 100px;, toh aap browser ko bol rahe hain ki: "Mere paas sirf 2 hi columns ki jagah hai."
+Isliye boxes apne aap side-by-side (baju-baju) set ho jate hain. -->
+
+<!-- grid-template-rows (Rows kahan chupi hain?)
+Jab aap likhte hain grid-template-rows: 200px 200px;, toh aap ye bata rahe hain ki: "Pehli row ki height 200px honi chahiye aur doosri ki bhi."
+
+Lekin dikkat tab aati hai jab aapne rows define toh kar di, par unka asar nahi dikhta. Iske 2 bade reasons ho sakte hain:
+
+Height ka Masla: Agar aapke parent container ki koi height fix nahi hai, toh rows ki height auto dikhne lagti hai (jitna content hai utni hi badi row).
+
+Implicit vs Explicit Grid: Agar aapne 2 rows define ki hain par items 10 hain, toh baaki ki rows apne aap (implicit) ban jayengi aur wo upar wale niyam (200px) ko nahi manengi. -->
