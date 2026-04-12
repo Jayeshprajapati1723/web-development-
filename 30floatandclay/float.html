@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear </title>
+<style>
+    img{
+        float : left ;
+        /* float ka kam h ab img left float kregi or lorem 45 bhi uske rigth m dikhega phle niche tha  */
+    }
+
+    .card{
+        /* ab ye parent sb card ka pr abhi contenet overflow h 
+        to hm display : flow root  */
+    display : flow-root ;
+    }
+    .card1{
+        border: 2px solid black ;
+    }
+    .card2{
+      clear: left ;
+      /* left right dono kr skte h both */
+       border : 2px solid blueviolet;
+    }
+    .card3{
+        border : 2px solid blue ;
+    }
+    /* .card:nth-child(2) {
+ border : 2px solid red ;
+background-color: aqua;
+clear : left ;
+    } */
+</style>
+</head>
+
+<body>
+
+    <div class="card">
+        <img src="image.png" alt="image of desktope">
+        <div class="card1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloremque itaque tempore facere quas mollitia deserunt et consequuntur harum, vitae natus. Facere minus magni laudantium molestiae dignissimos explicabo saepe quibusdam. Harum repellendus eaque, similique laboriosam, temporibus, iure recusandae iusto quas reiciendis qui ipsam. Numquam, cupiditate. </div>
+
+                <div class="card2">card 2 m card 2 hu mere left m mujhe koi overflow nhi chahiye h isliye m display : clear use kr rha hu m Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugiat debitis eum eos eveniet delectus distinctio dolorum aperiam, commodi accusamus alias ab aliquam obcaecati dolor ipsa, sunt consequuntur enim quod. Natus dolores optio ab aperiam nesciunt ducimus quos! Accusamus recusandae, soluta ullam temporibus aut, explicabo quod totam porro ea, sed itaque culpa veritatis qui excepturi! Ipsa minima odio eum animi accusantium unde illum, minus tenetur eaque qui voluptate, omnis temporibus. Doloribus cum laboriosam officiis mollitia quos corporis commodi, cupiditate excepturi rem, ipsa facere. Cum sint, laboriosam perspiciatis quas, aspernatur debitis veritatis, velit voluptatem corrupti quam vero rem explicabo illo dolorem.
+                </div>
+
+                        <div class="card3">
+                            card 3
+                            </div>
+    </div>                    
+</body>
+
+</html>
