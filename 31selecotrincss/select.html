@@ -5,26 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>selectors</title>
     <style>
-        *{
-            background-color: #cad097 ;;
+        * {
+            background-color: #cad097;
+            ;
         }
-        .boxes *{
+
+        .boxes * {
             background-color: red;
-            border :2px solid blue ;
+            border: 2px solid blue;
         }
         /* imp elements  */
-        .boxes::before  {
-            content : "hello jayesh"
+        .boxes::before {
+            content: "hello jayesh"
         }
-        .boxes::after{
-            content : "hello bhai bye "
+
+        .boxes::after {
+            content: "hello bhai bye "
         }
         .box:nth-child(2) {
-            background-color: yellow ;;
+            background-color: yellow;
+            ;
         }
         .box:nth-child(odd) {
-            background-color: black  ;;
-       color : yellow ;
+            background-color: black;
+            ;
+            color: yellow;
         }
         /* hm jb web m slect krte h agr hme usme dwsign krna h krskte h  
         :: selection
@@ -33,37 +38,40 @@
         }
         
         */
-    ::selection {
-    
-    color : black ;
-        background-color : rgb(0, 255, 38) ;
+        ::selection {
+
+            color: black;
+            background-color: rgb(0, 255, 38);
         }
 
         /* first letter or first line  */
         .box:nth-child(3) ::first-letter {
-            color : mediumaquamarine ;
-        }
-        .box:nth-child(3) ::first-line{
-            color : green ;
-        }
-        .box::first-line{
-            color : red ;
-        }
-        .box::first-letter{
-            color : rgb(13, 226, 45) ;
-            font-size : 45px ;
+            color: mediumaquamarine;
         }
 
-        input{
-            color: lab(95.83% -25.73 41.93) ;
-            font-size :12px ;
-            background-color: red ;
-        placeholder-color:hsla(243, 97%, 48%, 0.308) ;
+        .box:nth-child(3) ::first-line {
+            color: green;
+        }
+
+        .box::first-line {
+            color: red;
+        }
+
+        .box::first-letter {
+            color: rgb(13, 226, 45);
+            font-size: 45px;
+        }
+
+        input {
+            color: lab(95.83% -25.73 41.93);
+            font-size: 12px;
+            background-color: red;
+            placeholder-color: hsla(243, 97%, 48%, 0.308);
         }
     </style>
 </head>
 <body>
-    <input  type="text" placeholder="jayeshji">
+    <input type="text" placeholder="jayeshji">
     <div class="boxes">
         <div class="box">
             box1
@@ -72,7 +80,28 @@
             box2
         </div>
         <div class="  box ">
-            box3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut necessitatibus id quibusdam dolorum sequi nam, hic perferendis tempore ducimus nisi, architecto eligendi, sapiente culpa voluptatum illo. Amet nemo, eum architecto tempore, est odio optio ullam quasi minima rem eius eveniet quaerat facere corporis qui. A, voluptas suscipit tenetur sequi eius et explicabo mollitia maiores rem necessitatibus ad perferendis voluptatibus praesentium sapiente reiciendis natus, vitae saepe sed, voluptatum tempore illum harum quam architecto quisquam. Asperiores eveniet sit similique alias. Illum dicta molestiae amet officia quasi voluptates. Adipisci dolorum nesciunt repellat voluptatibus, sint ad minima saepe, consequuntur veniam eveniet molestiae illo unde quam exercitationem odit, voluptatem autem consectetur! Numquam ex libero sint corrupti quam aliquid iusto quibusdam dolorem. Quae rerum, illo, repellat vel unde inventore excepturi ullam laborum, eaque non error ipsam. Obcaecati, harum a ratione voluptatem totam corrupti nihil rerum aliquid, laborum illum quo facilis iure quasi eum quos, eveniet sunt consectetur. Totam pariatur quis officia fugit, ut et molestias corrupti vel cupiditate facere reprehenderit error dolorem blanditiis minima numquam minus velit molestiae atque eos, dolor quo? Perspiciatis distinctio natus, id exercitationem, dicta temporibus mollitia fugiat atque numquam rem nemo nesciunt odit. Dolorum laudantium possimus molestiae ut necessitatibus ducimus aliquam laborum quidem dolor in cum porro dolore esse cumque sequi, dolores repellendus rerum adipisci magni repudiandae? Atque, quos reiciendis, dolorum quia suscipit tempora, alias molestias minima ea dolor placeat maxime ipsa distinctio vitae voluptates ullam impedit? Placeat iusto odio expedita suscipit, illo minus? Delectus assumenda dolor est unde. Similique numquam illo quisquam perspiciatis fugiat dignissimos excepturi ex corrupti at optio sunt nulla expedita quaerat, cum tempora a magnam odit, omnis sapiente amet beatae distinctio cupiditate iure deleniti. Nam quae quam dicta minus illum, eveniet earum ducimus dolorem id numquam sed fugit odio dignissimos sunt ut placeat, iure a tempora architecto alias?
+            box3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut necessitatibus id quibusdam dolorum sequi
+            nam, hic perferendis tempore ducimus nisi, architecto eligendi, sapiente culpa voluptatum illo. Amet nemo,
+            eum architecto tempore, est odio optio ullam quasi minima rem eius eveniet quaerat facere corporis qui. A,
+            voluptas suscipit tenetur sequi eius et explicabo mollitia maiores rem necessitatibus ad perferendis
+            voluptatibus praesentium sapiente reiciendis natus, vitae saepe sed, voluptatum tempore illum harum quam
+            architecto quisquam. Asperiores eveniet sit similique alias. Illum dicta molestiae amet officia quasi
+            voluptates. Adipisci dolorum nesciunt repellat voluptatibus, sint ad minima saepe, consequuntur veniam
+            eveniet molestiae illo unde quam exercitationem odit, voluptatem autem consectetur! Numquam ex libero sint
+            corrupti quam aliquid iusto quibusdam dolorem. Quae rerum, illo, repellat vel unde inventore excepturi ullam
+            laborum, eaque non error ipsam. Obcaecati, harum a ratione voluptatem totam corrupti nihil rerum aliquid,
+            laborum illum quo facilis iure quasi eum quos, eveniet sunt consectetur. Totam pariatur quis officia fugit,
+            ut et molestias corrupti vel cupiditate facere reprehenderit error dolorem blanditiis minima numquam minus
+            velit molestiae atque eos, dolor quo? Perspiciatis distinctio natus, id exercitationem, dicta temporibus
+            mollitia fugiat atque numquam rem nemo nesciunt odit. Dolorum laudantium possimus molestiae ut
+            necessitatibus ducimus aliquam laborum quidem dolor in cum porro dolore esse cumque sequi, dolores
+            repellendus rerum adipisci magni repudiandae? Atque, quos reiciendis, dolorum quia suscipit tempora, alias
+            molestias minima ea dolor placeat maxime ipsa distinctio vitae voluptates ullam impedit? Placeat iusto odio
+            expedita suscipit, illo minus? Delectus assumenda dolor est unde. Similique numquam illo quisquam
+            perspiciatis fugiat dignissimos excepturi ex corrupti at optio sunt nulla expedita quaerat, cum tempora a
+            magnam odit, omnis sapiente amet beatae distinctio cupiditate iure deleniti. Nam quae quam dicta minus
+            illum, eveniet earum ducimus dolorem id numquam sed fugit odio dignissimos sunt ut placeat, iure a tempora
+            architecto alias?
         </div>
     </div>
 </body>
