@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object feet and object cover </title>
+<style >
+.container {
+    width : 400px ;height :400px ;
+    border : 2px solid blue ;
+background-color: aqua;
+}
+img {
+    /* ab dekho hm direct bhi aspect ratio set kr skte h image ka prntu isme time lgega  */
+    /* isliye hm image ki ht width dedo uske niche likho object-fit: cover ab bs isse nuksan ye h ki image cut kr dega kch portion pr fit kr dega  
+    so cover se cover kerega bs 
+    */
+    width: 410px;
+    height : 400px;
+    object-fit: cover ;
+/* contain ye image cut kr dega pr full fit kr dega  */
+object-fit: contain;
+
+/* agr hm chahte h ki specific portion cut ho to hm use kr skte  */
+object-position: top left  ;
+
+background-image: url("image.png");
+background-repeat: repeat-x;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="container ">
+        <div><img src="image.png">
+        </div>
+    </div>
+</body>
+</html>
