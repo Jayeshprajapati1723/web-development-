@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation using ball jumping move to its parents box</title>
+    <style>
+        .cont {
+            width: 220px;
+            height: 220px;
+            border: 2px solid blue;
+            background-color: blue;
+            display: flex;
+            align-items: end;
+        }
+
+        .box {
+            position: relative;
+            height: 20px;
+            width: 20px;
+            border-radius: 10rem;
+            background-color: red;
+
+            /* animation-timing-function: cubic-bezier(); */
+            animation: movex 3s linear infinite, movey 3s ease-out infinite alternate;
+            /* The animation shorthand CS property applies an animation between styles. It is a shorthand for animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, animation-play-state, and animation-timeline. */
+
+
+            /* animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            animation-fill-mode: forwards;
+       animation-timing-function: ease-out;
+       animation: linear infine ; */
+        }
+
+        @keyframes movey {
+            from {
+                background-color: red;
+                bottom: 0;
+            }
+
+            to {
+                background-color: aliceblue;
+                bottom: 20%;
+            }
+
+
+
+        }
+
+        @keyframes movex {
+            from {
+                /* fill mode m color change  */
+                background-color: red;
+                left: 0;
+            }
+
+            to {
+                /* transform: translateX(20px); */
+                left: 100%;
+                background-color: #8e1723;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+
+</html>
