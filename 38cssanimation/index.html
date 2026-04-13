@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+<style>
+    .container{
+        background-color: black;
+        width : 150px ;
+        height : 150px ;
+    }
+    .box{
+        width : 50px ;height: 50px ;
+        background-color: brown;
+/* call animation in line one  */
+animation: jayeshanimation ;
+animation-duration: 3s;
+animation-iteration-count: 5;
+animation-timing-function: ease-out;
+animation-duration:reverse;
+/* kafi majedar h ye to iteration se hm kitni bar bhi translate kra skte h  */
+animation-duration: alternate reverse;
+/* animation-play-state: paused; */
+animation-fill-mode: backwards;
+
+    }
+
+    @keyframes jayeshanimation{
+        from{
+background-color: red ;
+        }to{
+            transform: translateX(200px) ;
+            /* animatiojn k madad se hm ise move krayenge bar bar iteration  se  */
+            background-color: chocolate;
+        }
+    }
+</style>
+
+</head>
+<body>
+    <div class="container ">
+<div class="box">
+
+</div>
+
+    </div>
+</body>
+</html>
