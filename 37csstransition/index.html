@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .cont{
+            background-color: antiquewhite;
+            width : 80vw ;
+            height: 80vh;
+            border : 2px dashed black ;
+        }
+        .box {
+            background-color: aqua;
+            width: 40vw;
+            height :
+             40vh ;
+             border : 2px solid rgb(209, 40, 40) ;
+             transition-property: transform;
+             transition-duration: 3s;
+             transition-timing-function: cubic-bezier(1, 0, 0, 1);
+             transition-delay: 4s;
+             /* alag-alag likhne ki jagah hum ek hi line mein likhte hain:
+transition: all 0.5s ease-in-out 1s; */
+        }
+        /* ransition ki 4 Main Properties [03:30]
+Harry ne bataya hai ki ye property 4 cheezon se milkar bani hai:
+
+transition-property: Kaunsi property ko smooth karna hai (e.g., background-color, transform, ya all).
+
+transition-duration: Kitna time lagna chahiye (e.g., 2s, 500ms).
+
+transition-timing-function: Animation ki speed kaisi hogi?
+
+ease-in: Shuru mein slow, phir fast.
+
+ease-out: Shuru mein fast, end mein slow.
+
+linear: Ek hi speed se [08:30].
+
+transition-delay: Kitni der baad animation shuru hog */
+        .translate {
+            transform: translate(20%,20%);
+            /* but ye smooth nhi hota isliye hm transition k use krte h  */
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>
