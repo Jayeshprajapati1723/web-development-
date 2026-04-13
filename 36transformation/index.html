@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2d and 3d transformation</title>
+    <style>
+        .container {
+            border: 2px solid blue;
+            height: 300px;
+
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 40px;
+            width: 40px;
+            /* transform: rotate(40deg);
+            
+            transform: rotate(0.5turn);
+     transform: rotateX('40deg');
+    transform: rotateY('40deg'); */
+      transform: rotateY(40deg);
+      /* Rotate (Ghumana) [02:04]
+Isse aap apne element ko kisi bhi angle par ghuma sakte ho.
+
+rotate(45deg): Ye element ko 45 degree clock-wise ghuma dega.
+
+rotateX / rotateY: Ye 3D mein ghumata hai. Jaise rotateY(180deg) karne se element */
+
+/* scale 
+Scale (Chota-Bada karna) [04:43]
+Isse aap kisi bhi element ko zoom-in ya zoom-out kar sakte ho.
+
+scale(2): Isse box ka size double ho jayega.
+
+scale(0.5): Isse size aadha ho jayega.
+
+scaleX ya scaleY: Sirf ek side se lamba ya chauda karne ke liye.*/
+/* transform: scale(2); */
+transform: scale(0.5);
+transform: scaleX(2);
+transform: scaleY(2);
+
+/* 
+CSS Transforms ko Harry ne is video mein bahut aasan bhasha mein samjhaya hai. Iska matlab hota hai kisi bhi element (like a box or image) ki shape, size, ya position ko badalna bina baki layout ko chede.
+
+Iske main 4 pillars hain, chaliye unhe step-by-step samajhte hain:
+
+1. Rotate (Ghumana) [02:04]
+Isse aap apne element ko kisi bhi angle par ghuma sakte ho.
+
+rotate(45deg): Ye element ko 45 degree clock-wise ghuma dega.
+
+rotateX / rotateY: Ye 3D mein ghumata hai. Jaise rotateY(180deg) karne se element "flip" ho jayega [04:13].
+
+2. Scale (Chota-Bada karna) [04:43]
+Isse aap kisi bhi element ko zoom-in ya zoom-out kar sakte ho.
+
+scale(2): Isse box ka size double ho jayega.
+
+scale(0.5): Isse size aadha ho jayega.
+
+scaleX ya scaleY: Sirf ek side se lamba ya chauda karne ke liye.
+
+3. Translate (Khiskana) [05:47]
+Ye sabse zyada use hone wali property hai. Isse aap element ko uski jagah se move karte ho.
+
+translate(50px, 100px): Matlab X-axis (right) mein 50px aur Y-axis (niche) mein 100px move karo.
+
+Fayda: Harry ne bataya ki iska use zyadatar Navbar ko hide/show karne mein kiya jata hai (translateY(-100%)) [06:56]. */
+
+transform: translate(100px, 50px);
+
+/* . Skew (Tedha karna) [05:21]
+Isse element ko "pakad kar khinchne" jaisa effect milta hai, jaise parallelogram.
+
+skew(20deg): Box ko thoda tedha kar dega.
+
+Dhyan dein: Skew sirf X aur Y axis mein hota hai, Z axis mein nahi */
+transform: skew(20deg);
+transform: skewX(20deg);
+transform: skewY(20deg);
+
+/* 
+CSS Transforms ko Harry ne is video mein bahut aasan bhasha mein samjhaya hai. Iska matlab hota hai kisi bhi element (like a box or image) ki shape, size, ya position ko badalna bina baki layout ko chede.
+
+Iske main 4 pillars hain, chaliye unhe step-by-step samajhte hain:
+
+1. Rotate (Ghumana) [02:04]
+Isse aap apne element ko kisi bhi angle par ghuma sakte ho.
+
+rotate(45deg): Ye element ko 45 degree clock-wise ghuma dega.
+
+rotateX / rotateY: Ye 3D mein ghumata hai. Jaise rotateY(180deg) karne se element "flip" ho jayega [04:13].
+
+2. Scale (Chota-Bada karna) [04:43]
+Isse aap kisi bhi element ko zoom-in ya zoom-out kar sakte ho.
+
+scale(2): Isse box ka size double ho jayega.
+
+scale(0.5): Isse size aadha ho jayega.
+
+scaleX ya scaleY: Sirf ek side se lamba ya chauda karne ke liye.
+
+3. Translate (Khiskana) [05:47]
+Ye sabse zyada use hone wali property hai. Isse aap element ko uski jagah se move karte ho.
+
+translate(50px, 100px): Matlab X-axis (right) mein 50px aur Y-axis (niche) mein 100px move karo.
+
+Fayda: Harry ne bataya ki iska use zyadatar Navbar ko hide/show karne mein kiya jata hai (translateY(-100%)) [06:56].
+
+4. Skew (Tedha karna) [05:21]
+Isse element ko "pakad kar khinchne" jaisa effect milta hai, jaise parallelogram.
+
+skew(20deg): Box ko thoda tedha kar dega.
+
+Dhyan dein: Skew sirf X aur Y axis mein hota hai, Z axis mein nahi [05:40].
+
+5. Transform Origin (Kahan se ghoomega?) [07:36]
+By default, koi bhi box apne Center (50% 50%) se rotate ya scale hota hai.
+
+Agar aap chahte ho ki wo ek kone se (corner) rotate ho, toh aap transform-origin: top left; use kar sakte ho. */
+transform-origin: top left;
+
+            position: relative;
+            top: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="box">box </div>
+    </div>
+</body>
+
+</html>
