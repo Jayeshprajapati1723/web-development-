@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <button id="btn">click here</button>
+</body>
+<script>
+    document.querySelector("#btn").addEventListener("click",(e)  =>{
+e.target.style.backgroundColor = "red" ;
+    })
+    setInterval(()=>
+        {
+
+// isse hm repeatadly kam kra skte h jese hr teen second pr color change set intercval se or rokne kliye ise hm clearinterval(1)etc
+            document.querySelector("#btn").style.backgroundColor ="bllue" ;
+        }
+   ,3000 )
+//    ek bar krane k liye settime kro 
+</script>
+</html>

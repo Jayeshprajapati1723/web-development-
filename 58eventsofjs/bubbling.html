@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container{
+        border : 2px solid black ;
+        background-color: aqua;
+    padding : 14px ;
+
+    }
+    .containerchild{
+               border : 2px solid black ;
+        background-color: #ff8c00;
+    padding : 14px ;
+
+    }
+    .child{
+               border : 2px solid black ;
+        background-color: #eeff00;
+    padding : 14px ;
+
+    }
+</style>
+
+</head>
+<body>
+<div class="container" >
+    <div class="containerchild" >
+        <div class="child">
+hey i am child 
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    // ab dekho m kch bhi event lagaunga teeno pr to child pr click krunga to vo dono parent and grandparent automatically bubble honge ise rokne k liye hm stopPropogation use krte h 
+
+    document.querySelector(".container").addEventListener("click",(ele)=>{
+        ele.stopPropagation();
+alert("you clicked container grandpa")
+    } )
+    document.querySelector(".containerchild").addEventListener("click",(ele)=>
+
+    {
+                ele.stopPropagation();
+
+        alert("you clicked parent container child ")
+    })
+    document.querySelector(".child").addEventListener("click",(ele)=>{
+                ele.stopPropagation();
+
+        alert("m bubbling krunga baki do bhi auto click honge mujhe click kiya h to ab rokne k liye stoppropogation lgao")
+    })
+</script>
+</html>
