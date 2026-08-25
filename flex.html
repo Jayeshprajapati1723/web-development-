@@ -1,0 +1,102 @@
+<!-- flex box with flex direction  -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex box</title>
+    <style>
+      .flex-container {
+        /* hmne on kr diya flex  */
+        display: flex;
+
+        /* flex direction box kidhar row */
+        flex-direction: row;
+        margin-top: 10px;
+        height: 200px;
+        width: 200px;
+        background-color: black;
+      }
+      .flex-container1 {
+        /* hmne on kr diya flex  */
+        display: flex;
+
+        /* flex direction box kidhar row */
+        flex-direction: row row-reverse;
+        margin-top: 10px;
+        height: 200px;
+        width: 200px;
+        background-color: black;
+      }
+
+      .flex-container3 {
+        /* hmne on kr diya flex  */
+        display: flex;
+
+        /* flex direction box kidhar row */
+        flex-direction: column;
+        margin-top: 10px;
+        height: 400px;
+        width: 200px;
+        background-color: black;
+      }
+      .flex-container4 {
+        /* hmne on kr diya flex  */
+        display: flex;
+        margin-top: 10px;
+        /* flex direction box kidhar row */
+        flex-direction: column-reverse;
+
+        height: 400px;
+        width: 200px;
+        background-color: black;
+      }
+      .box {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(170, 255, 0);
+        border: 2px solid rgb(78, 48, 211);
+        margin: 5px;
+        color: rgb(255, 0, 0);
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- row by defalult left to right  1 2 3 4 5  -->
+    <div class="flex-container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+    </div>
+
+    <!-- coloum  -->
+    <div class="flex-container1">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+    </div>
+
+    <!-- coloum  -->
+    <div class="flex-container4">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+    </div>
+
+    <!-- coloum  -->
+    <div class="flex-container3">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+    </div>
+  </body>
+</html>
